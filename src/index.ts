@@ -8,11 +8,12 @@
 import * as THREE from 'three';
 import * as ZapparThree from '@zappar/zappar-threejs';
 import TWEEN from '@tweenjs/tween.js';
-import targetImage from '../assets/example-tracking-image.zpt';
-import doorOneTextureUrl from '../assets/doorOneTexture.jpg';
-import doorTwoTextureUrl from '../assets/doorTwoTexture.jpg';
 
-import './index.sass';
+import './index.css';
+
+const targetImage = new URL('../assets/example-tracking-image.zpt', import.meta.url).href;
+const doorOneTextureUrl = new URL('../assets/doorOneTexture.jpg', import.meta.url).href;
+const doorTwoTextureUrl = new URL('../assets/doorTwoTexture.jpg', import.meta.url).href;
 
 // The SDK is supported on many different browsers, but there are some that
 // don't provide camera access. This function detects if the browser is supported
